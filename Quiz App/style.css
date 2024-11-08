@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #001e4d, #005a7c);
+    font-size: 16px;
+    color: #ffffff;
+}
+.app {
+    background: #fff;
+    color: rgba(24, 13, 230, 0.422);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    font-style: oblique;
+    font-size: larger;
+
+    
+}
+
+.app h1 {
+    font-size: 35px;
+    color: #278732;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #93ffdb;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #4d2c00;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn {
+    background: #fff;
+    color: #710a0a;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: 3px solid #ff9800;
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    background: #e0e0e0;
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+#next-btn {
+    background: #3779e2;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+#next-btn:hover {
+    background-color: #00416a;
+}
+
+.correct {
+    background: #eae59a; 
+}
+
+.incorrect {
+    background: #93ffdb; 
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #001e4d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
